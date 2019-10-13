@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-// function protocols
+// function prototype
 double** makeMatrix(int rows, int cols);
 void deleteMatrix(double** A);
 
