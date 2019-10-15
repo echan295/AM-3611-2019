@@ -11,6 +11,13 @@ Git comes pre-installed in most computers. However, if Git is not installed onto
 
 After you have installed Git, you need to set up your Git environment. You only need to do this the first time you install Git on your computer.
 ```console
-git config --global user.name "Eunice Chan"
-git config --global user.email "echan295@uwo.ca"
+git config --global user.name "Your Name"
+git config --global user.email "youremail@email.com"
 ```
+By including `--global`, all repositories that you make on your computer will be under the name and email that you have provided. If, for example, you want one repository to be under different credentials, then after you have create your repository (which will be shown next), you can type
+```console
+git config --local user.name "Different Name"
+git config --local user.email "differenemail@email.com"
+```
+
+Now that we have provided our name and email, we want to 
