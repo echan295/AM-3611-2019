@@ -21,8 +21,11 @@ git config --local user.email "differenemail@email.com"
 ```
 
 Now that we have provided our name and email, we want to create a local repository on your computer. As a reminder, to navigate around your computer, the following provides some common and useful bash commands:
-```
-pwd
-ls
-cd
+```console
+pwd // gives working directory
+ls // lists contents in directory
+cd // change directory
+cd .. // change one directory up
+mkdir // make directory
+touch // create file without any content
 ```
