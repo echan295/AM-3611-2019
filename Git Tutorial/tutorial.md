@@ -65,3 +65,11 @@ to stage all changes in <file> for the next commit, and lastly,
 git add <directory>
 ```
 to stage all changes in <directory> for the next commit. If you want to add a lot of files but want to ignore a few, you can create a file called `.gitignore` and include those particular files that you do not want to add. Similar to `git add`, you are able to filter files by extensions, by the file name, or by directory.
+
+After we have stages our changes, we can use the command
+```console
+git status
+```
+to take a look at the state of the working directory and the staging area. It lets you see which changes have been stages, which haven't, and which files aren't being tracked by Git.
+
+## Introduction to GitHub
