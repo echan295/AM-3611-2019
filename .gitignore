@@ -1,5 +1,8 @@
+# tells git to ignore everything
 *
+# then unignores anything that is a directory
 !*/
+# unignores all files with an extension
 !*.*
 *.out
 *.o
