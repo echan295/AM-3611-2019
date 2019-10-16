@@ -29,3 +29,7 @@ cd .. // change one directory up
 mkdir // make directory
 touch // create file without any content
 ```
+Navigate your way to the directory you would like to make your repository, and initialize git using
+```console
+git init
+```
