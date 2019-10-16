@@ -48,4 +48,16 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 ```
-Now, we want to "save" this file to Git. Rather than using the term "save", we will use the preferred terminology "commit". You can think of commit as a two stage process: we first need to *add* your file to something called the *staging area* before committing the file.
+Now, we want to "save" this file to Git. Rather than using the term "save", we will use the preferred terminology "commit". You can think of commit as a two stage process: we first need to *add* your file to the so-called *staging area*. It indicates to Git that you want to include the updates to the particular file in the next commit. There are many options to add your files to Git:
+```console
+git add .
+```
+means to add everything in your directory,
+```console
+git add *.ext
+```
+means to add everything with that particular extension in your directory, and lastly
+```console
+git add <file>
+```
+to add the one file to Git.
