@@ -36,6 +36,15 @@ git init
 in your terminal. A hidden folder called `.git` will be made in the directory. Congratulations, you have started your first repository!
 
 Since your folder is probably empty, it is not that interesting to use Git. Let us create a file from the terminal by typing
-```bash
+```console
 touch hello.cpp
+```
+This creates a file called `hello.cpp` in the working directory. Open this file using your favourite text editor and copy and paste the following
+```c++
+#include <iostream>
+
+int main(int argc, char const *argv[]) {
+  std::cout << "Hello World\n";
+  return 0;
+}
 ```
