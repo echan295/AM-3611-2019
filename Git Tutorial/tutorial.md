@@ -39,7 +39,7 @@ Since your folder is probably empty, it is not that interesting to use Git. Let 
 ```console
 touch hello.cpp
 ```
-This creates a file called `hello.cpp` in the working directory. Open this file using your favourite text editor and copy and paste the following
+This creates a file called `hello.cpp` in the working directory. Open this file using your favourite text editor and copy and paste the following.
 ```c++
 #include <iostream>
 
@@ -48,3 +48,4 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 ```
+Now, we want to "save" this file to Git. Rather than using the term "save", we will use the preferred terminology "commit". You can think of commit as a two stage process: we first need to *add* your file to something called the *staging area* before committing the file.
