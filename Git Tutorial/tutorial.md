@@ -24,10 +24,10 @@ Now that we have provided our name and email, we want to create a local reposito
 ```console
 pwd # gives working directory
 ls # lists contents in directory
-cd # change directory
+cd directoryname # change directory
 cd .. # change one directory up
-mkdir # make directory
-touch # create file without any content
+mkdir directoryname # make directory
+touch filename.extension # create file without any content
 ```
 Navigate your way to the directory you would like to make your repository, and initialize git using
 ```console
