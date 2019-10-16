@@ -29,8 +29,13 @@ cd .. # change one directory up
 mkdir directoryname # make directory
 touch filename.extension # create file without any content
 ```
-Navigate your way to the directory you would like to make your repository, and initialize git using
+Navigate your way to the directory you would like to make your repository, and initialize git by typing
 ```console
 git init
 ```
-A hidden folder called `.git` will be made in the directory.
+in your terminal. A hidden folder called `.git` will be made in the directory. Congratulations, you have started your first repository!
+
+Since your folder is probably empty, it is not that interesting to use Git. Let us create a file from the terminal by typing
+```bash
+touch hello.cpp
+```
