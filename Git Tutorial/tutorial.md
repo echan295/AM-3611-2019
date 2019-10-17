@@ -29,6 +29,8 @@ cd .. # change one directory up
 mkdir directoryname # make directory
 touch filename.extension # create file without any content
 ```
+
+### Basic Git Commands
 Navigate your way to the directory you would like to make your repository, and initialize git by typing
 ```console
 git init
@@ -88,5 +90,7 @@ To exit from this, type `q`. You can also view a condensed version of this by ad
 ```console
 git log --oneline
 ```
+
+
 
 ## Introduction to GitHub
