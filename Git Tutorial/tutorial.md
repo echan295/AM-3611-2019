@@ -78,7 +78,7 @@ Once you have successfully added all the files that you desire to the staging ar
 ```console
 git commit -m "Enter changes here"
 ```
-If we had just typed `git commit`, Git will take you to a text editor on your terminal, such as Nano or Vim, for you to write a commit message. Not only does this take more time, if you are unfamiliar with these particular programs, you may not be able to commit anything to Git. (If by chance you accidentally typed `git commit`, to exit Vim, type `:wq`, to exit Nano, type `Ctrl+X`).
+If we had just typed `git commit`, Git will take you to a text editor on your terminal, such as Nano or Vim, for you to write a commit message. Not only does this take more time, if you are unfamiliar with these particular programs, you may not be able to commit anything to Git. (If by chance you accidentally typed `git commit`, to exit Vim, type `:wq`, to exit Nano, type `Ctrl+x`).
 
 Congratulations, you have successfully performed your first commit!
 
@@ -92,6 +92,8 @@ git log --oneline
 ```
 
 ### Branching and Merging
+Branching means that you diverge from the main line of development and continue to do work without messing with that main line. Typically, we use branches when we want to add new features or fix a bug in our program.
 
+![Image of git branching](https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=633)
 
 ## Introduction to GitHub
