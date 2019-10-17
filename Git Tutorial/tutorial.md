@@ -80,6 +80,13 @@ If we had just typed `git commit`, Git will take you to a text editor on your te
 
 Congratulations, you have successfully performed your first commit!
 
-
+To view your commit history, we use the command
+```console
+git log
+```
+To exit from this, type `q`. You can also view a condensed version of this by adding a parameter. The command to see a condensed version of your commit history is
+```console
+git log --oneline
+```
 
 ## Introduction to GitHub
