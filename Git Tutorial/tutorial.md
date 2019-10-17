@@ -94,6 +94,6 @@ git log --oneline
 ### Branching and Merging
 Branching means that you diverge from the main line of development and continue to do work without messing with that main line. Typically, we use branches when we want to add new features or fix a bug in our program.
 
-![Image of git branching](https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=633 | width=150)
+![Image of git branching](https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=633){:height="50%" width="50%"}
 
 ## Introduction to GitHub
