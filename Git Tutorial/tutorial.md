@@ -78,7 +78,7 @@ Once you have successfully added all the files that you desire to the staging ar
 ```console
 git commit -m "Enter changes here"
 ```
-If we had just typed `git commit`, Git will take you to a text editor on your terminal, such as Nano or Vim, for you to write a commit message. Not only does this take more time, if you are unfamiliar with these particular programs, you may not be able to commit anything to Git.
+If we had just typed `git commit`, Git will take you to a text editor on your terminal, such as Nano or Vim, for you to write a commit message. Not only does this take more time, if you are unfamiliar with these particular programs, you may not be able to commit anything to Git. (If by chance you accidentally typed `git commit`, to exit Vim, type `:wq`, to exit Nano, type `Ctrl+X`).
 
 Congratulations, you have successfully performed your first commit!
 
@@ -91,6 +91,7 @@ To exit from this, type `q`. You can also view a condensed version of this by ad
 git log --oneline
 ```
 
+### Branching and Merging
 
 
 ## Introduction to GitHub
