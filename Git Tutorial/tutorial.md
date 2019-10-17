@@ -92,10 +92,16 @@ git log --oneline
 ```
 
 ### Branching and Merging
-Branching means that you diverge from the main line of development and continue to do work without messing with that main line. Typically, we use branches when we want to add new features or fix a bug in our program.
+Branching means that you diverge from the main line of development and continue to do work without messing with that main line. Typically, we use branches when we want to add new features or fix a bug in our program. The following image visualizes a repository with two isolated lines of development: one for a little feature, and one for a longer funning feature. By developing them in branches, it is not only possible to work on both of them in parallel, but it also keeps the main master branch free from questionable code.
 
 <p align="center">
   <img src="https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=633" width="500">
 </p>
+
+To list all the branches in your repository, use the command
+```console
+git branch
+```
+This command is synonymous with `git branch --list`.
 
 ## Introduction to GitHub
