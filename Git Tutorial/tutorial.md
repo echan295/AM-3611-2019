@@ -70,6 +70,16 @@ After we have stages our changes, we can use the command
 ```console
 git status
 ```
-to take a look at the state of the working directory and the staging area. It lets you see which changes have been stages, which haven't, and which files aren't being tracked by Git.
+to take a look at the state of the working directory and the staging area. It lets you see which changes have been stages, which haven't, and which files aren't being tracked by Git. This command is extremely handy when staging for your next commit.
+
+Once you have successfully added all the files that you desire to the staging area, we are ready to commit the files. To commit, the preferred command is
+```console
+git commit -m "Enter changes here"
+```
+If we had just typed `git commit`, Git will take you to a text editor on your terminal, such as Nano or Vim, for you to write a commit message. Not only does this take more time, if you are unfamiliar with these particular programs, you may not be able to commit anything to Git.
+
+Congratulations, you have successfully performed your first commit!
+
+
 
 ## Introduction to GitHub
