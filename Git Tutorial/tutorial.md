@@ -165,3 +165,12 @@ git remote add origin <paste link here>
 git push origin master
 ```
 Terminal will prompt you to enter your GitHub username and password (so don't forget them!). Refresh your GitHub repository, and you will see that the files from your local repository are also on GitHub.
+
+### Forking a repository
+Let's say that there is a repository that you don't own that you'd like to contribute to. GitHub (not Git) has a feature called "forking". By forking a repository, essentially you are making a copy of the original repository, in which you own the duplicate. This allows you to change the code without disturbing the original code. To fork a repository, all you need to do is click the "fork" button, like the one in the image below.
+
+![](Images/fork.png)
+
+After clicking this button, GitHub creates a duplicate of the repository and takes you to where the duplicate is stored. Notice the title of the repository: see image below for an example.
+
+![](Images/forkupstream.png)
