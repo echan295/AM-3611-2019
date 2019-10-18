@@ -223,7 +223,8 @@ and GitHub will bring you to a page that looks like the image below.
 
 As long as it says that your changes are "Able to merge" with the upstream repository, it is safe for the changes you made to be merged, and you are able to create a pull request. Click the "Create pull request" button and GitHub will give you a region where you can write what you changed and why these changes are important. After you are done writing, you can click the "Create pull request" button again. You have now made your very first pull request on GitHub!
 
-<!-- ### Receiving a pull request -->
+### Receiving a pull request
+
 
 ### Collaboration
 GitHub makes it very easy for people to collaborate on code. To invite your friends to collaborate, go to your repository, click on Settings, then Collaborators. The location of these buttons have been made apparent in the following image. From there, you can search your friends' username, full name or email address and invite them to collaborate on the code in the repository. Your collaborators will have almost the same privileges as the user of the repository (no need to make pull requests!).
