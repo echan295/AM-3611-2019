@@ -174,3 +174,11 @@ Let's say that there is a repository that you don't own that you'd like to contr
 After clicking this button, GitHub creates a duplicate of the repository and takes you to where the duplicate is stored. Notice the title of the repository: see image below for an example.
 
 ![](Images/forkupstream.png)
+
+From forking, the duplicate repository is only stored remotely: you do not have these files on your local computer. The easiest way to download the repository is to copy the link to the **duplicate** repository (the one *you* own) by clicking the copy button, like the one shown below, and "cloning" the repository.
+
+![](Images/clone.png)
+Using terminal, navigate to a directory where you would like to download the repository. Then type
+```console
+git clone <paste link here>
+```
