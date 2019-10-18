@@ -98,10 +98,18 @@ Branching means that you diverge from the main line of development and continue 
   <img src="https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=633" width="500">
 </p>
 
-To list all the branches in your repository, use the command
+Let's say that we want to add a new feature to our `hello.cpp` program. To build a new branch, use the command
+```console
+git branch newfeature
+```
+Git then builds a new branch called `newfeature`. To list all the branches in your repository, we can type the command
 ```console
 git branch
 ```
-This command is synonymous with `git branch --list`.
+This command is synonymous with `git branch --list`. Not only does this command lists all the branches, it also tells you which branch you are on (indicated by the `*` before the branch name). To switch branches, you type
+```console
+git checkout newfeature
+```
+since we want to switch to the `newfeature` branch.
 
 ## Introduction to GitHub
