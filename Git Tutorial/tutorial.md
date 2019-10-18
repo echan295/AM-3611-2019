@@ -110,6 +110,13 @@ This command is synonymous with `git branch --list`. Not only does this command 
 ```console
 git checkout newfeature
 ```
-since we want to switch to the `newfeature` branch.
+since we want to switch to the `newfeature` branch. Now, we can start working on our new feature: a function! Open the file `hello.cpp` that we made earlier and copy and paste the following function:
+```c++
+void printString(std::string s)
+{
+  std::cout << s << "\n";
+}
+```
+
 
 ## Introduction to GitHub
