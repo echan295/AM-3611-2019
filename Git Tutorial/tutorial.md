@@ -178,7 +178,20 @@ After clicking this button, GitHub creates a duplicate of the repository and tak
 From forking, the duplicate repository is only stored remotely: you do not have these files on your local computer. The easiest way to download the repository is to copy the link to the **duplicate** repository (the one *you* own) by clicking the copy button, like the one shown below, and "cloning" the repository.
 
 ![](Images/clone.png)
+
 Using terminal, navigate to a directory where you would like to download the repository. Then type
 ```console
 git clone <paste link here>
 ```
+and the repository will be downloaded onto your computer! Your local repository is already "linked" to your remote repository, so you can `add`, `commit`, and `push` without any additional setup.
+
+### Syncing a fork
+Since we created a duplicate repository, this repository and the repository that we forked do not automatically stay in sync. Therefore, it is highly suggested to "sync" your repository often. To sync them, we first need to type into terminal
+```console
+git remote add upstream <link to the original repository>
+```
+This tells Git the location of the original repository that we want to sync with. Next, we'd like to "fetch" the data from the original repository using the following command:
+```console
+git fetch upstream
+```
+This should have downloaded the original repository (updated version) onto your local computer, but on a different branch. Then, we can merge the update branch to our `master` branch, and your local repository is now synced up to the newest update.
