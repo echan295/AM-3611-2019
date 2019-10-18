@@ -143,5 +143,10 @@ The `-d` indicates that the `newfeature` branch will be deleted.
 Now that we know the basics of Git, we can begin our discussion on GitHub. As a reminder, Git and GitHub are two separate entities: Git is local to your computer, GitHub is remote. In this discussion, we will learn how to "sync" your local and remote repositories, "fork" a repository (and keep this repository in sync).
 
 ### Pushing your local repository (Git) to a remote repository (GitHub)
-We first need to sign in to GitHub and create a new repository.
+We first need to sign in to GitHub and create a new repository. As shown in the image below, the button to create a new repository is located on the top right of your screen under the `+` drop down menu.
+
 ![](Images/newRepo.png)
+
+Clicking "New repository" will then take you to a page that looks like the image below.
+
+![](Images/makeNewRepo.png)
