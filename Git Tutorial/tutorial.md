@@ -147,6 +147,10 @@ We first need to sign in to GitHub and create a new repository. As shown in the 
 
 ![](Images/newRepo.png)
 
-Clicking "New repository" will then take you to a page that looks like the image below.
+Clicking "New repository" will then take you to a page that looks like the image below. Name your repository, and give your repository a description if you'd like, and then click "Create repository".
 
 ![](Images/makeNewRepo.png)
+
+GitHub will then make the repository and bring you to the link where your repository is located. Since this is a new repository, GitHub gives you some commands to get started. We will highlight them here (if we haven't already). In the blue box, like the one that is shown in the image below, there is a link to your remote repository. Click on the button (circled in the image below) to copy the link---you will need it shortly.
+
+![](Images/httpslink.png)
