@@ -167,11 +167,11 @@ git push origin master
 Terminal will prompt you to enter your GitHub username and password (so don't forget them!). Refresh your GitHub repository, and you will see that the files from your local repository are also on GitHub.
 
 ### Forking a repository
-Let's say that there is a repository that you don't own that you'd like to contribute to. GitHub (not Git) has a feature called "forking". By forking a repository, essentially you are making a copy of the original repository, in which you own the duplicate. This allows you to change the code without disturbing the original code. To fork a repository, all you need to do is click the "fork" button, like the one in the image below.
+Let's say that there is a repository that you don't own that you'd like to contribute to. GitHub (not Git) has a feature called "forking". By forking a repository, essentially you are making a copy of the original repository, in which you own the duplicate (also known as a fork). This allows you to change the code without disturbing the original code. To fork a repository, all you need to do is click the "fork" button, like the one in the image below.
 
 ![](Images/fork.png)
 
-After clicking this button, GitHub creates a duplicate of the repository and takes you to where the duplicate is stored. Notice the title of the repository: see image below for an example.
+After clicking this button, GitHub creates a duplicate of the repository and takes you to where the duplicate is located. You may notice that the repository title looks a little different---similar to the image shown below. In this case, I forked a repository called "Bohemian_Upper_Hessenberg_Toeplitz_Matrices", which is owned by "BohemianMatrices". It created a duplicate of this repository, and as the name of the repository from the image suggests, I now own a copy of the repository "Bohemian_Upper_Hessenberg_Toeplitz_Matrices". Below the title in the given image, it says "forked from BohemianMatrices/Bohemian_Upper_Hessenberg_Toeplitz_Matrices". We call this the upstream repository.
 
 ![](Images/forkupstream.png)
 
@@ -186,7 +186,7 @@ git clone <paste link here>
 and the repository will be downloaded onto your computer! Your local repository is already "linked" to your remote repository, so you can `add`, `commit`, and `push` without any additional setup.
 
 ### Syncing a fork
-Since we created a duplicate repository, this repository and the repository that we forked do not automatically stay in sync. Therefore, it is highly suggested to "sync" your repository often. To sync them, we first need to type into terminal
+Since we created a duplicate repository, this repository and the repository that we forked do not automatically stay in sync. Therefore, it is highly suggested to "sync" the duplicate repository often. To sync them, we first need to type into terminal
 ```console
 git remote add upstream <link to the original repository>
 ```
@@ -194,7 +194,7 @@ This tells Git the location of the original repository that we want to sync with
 ```console
 git fetch upstream
 ```
-This should have downloaded the original repository (updated version) onto your local computer, but on a different branch. Then, we can merge the update branch to our `master` branch
+This should have downloaded the original repository (updated version) onto your local computer, but on a different branch called `upstream/master`. Then, we can merge the `upstream/master` branch to our `master` branch
 ```console
 git merge upstream/master
 ```
