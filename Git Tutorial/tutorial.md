@@ -175,7 +175,7 @@ After clicking this button, GitHub creates a duplicate of the repository and tak
 
 ![](Images/forkupstream.png)
 
-After forking, the fork is only stored remotely: you do not have these files on your local computer. The easiest way to download the repository is to copy the link to the **duplicate** repository (the one *you* own) by clicking the copy button, like the one shown below, and "cloning" the repository.
+After forking, the fork is only stored remotely: you do not have these files on your local computer. The easiest way to download the repository is to copy the link to the fork repository (the one *you* own) by clicking the copy button, like the one shown below, and "cloning" the repository.
 
 ![](Images/clone.png)
 
