@@ -210,11 +210,22 @@ and your local repository is now synced up to the newest update. To update your 
 git push origin master
 ```
 
-<!-- ### Submitting a pull request -->
+### Submitting a pull request -->
+Let's say that the changes that you made to the fork are really good and you think that the original repository should include the changes that you made. Unfortunately, since you do not own the original repository, you cannot make the changes, instead, you need to submit a "pull request".
+
+After pushing your changes to your remote repository, click on the "Pull request button", as the image below shows.
+
+![](Images/pullrequest.png)
+
+and GitHub will bring you to a page that looks like the image below.
+
+![](Images/createpullrequest.png)
+
+As long as it says that your changes are "Able to merge" with the upstream repository, it is safe for the changes you made to be merged, and you are able to create a pull request. Click the "Create pull request" button and GitHub will give you a region where you can write what you changed and why these changes are important. After you are done writing, you can click the "Create pull request" button again. You have now made your very first pull request on GitHub!
 
 <!-- ### Receiving a pull request -->
 
 ### Collaboration
-GitHub makes it very easy for people to collaborate on code. To invite your friends to collaborate, go to your repository, click on Settings, then Collaborators. The location of these buttons have been made apparent in the following image. From there, you can search your friends' username, full name or email address and invite them to collaborate on the code in the repository.
+GitHub makes it very easy for people to collaborate on code. To invite your friends to collaborate, go to your repository, click on Settings, then Collaborators. The location of these buttons have been made apparent in the following image. From there, you can search your friends' username, full name or email address and invite them to collaborate on the code in the repository. Your collaborators will have almost the same privileges as the user of the repository (no need to make pull requests!).
 
 ![](Images/collaborate.png)
