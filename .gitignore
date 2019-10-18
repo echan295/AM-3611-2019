@@ -6,3 +6,4 @@
 !*.*
 *.out
 *.o
+*.DS_Store

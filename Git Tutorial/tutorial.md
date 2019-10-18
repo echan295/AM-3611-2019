@@ -210,7 +210,7 @@ and your local repository is now synced up to the newest update. To update your 
 git push origin master
 ```
 
-### Submitting a pull request -->
+### Submitting a pull request
 Let's say that the changes that you made to the fork are really good and you think that the original repository should include the changes that you made. Unfortunately, since you do not own the original repository, you cannot make the changes, instead, you need to submit a "pull request".
 
 After pushing your changes to your remote repository, click on the "Pull request button", as the image below shows.
