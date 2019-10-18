@@ -202,3 +202,8 @@ and your local repository is now synced up to the newest update. To update your 
 ```console
 git push origin master
 ```
+
+### Collaboration
+GitHub makes it very easy for people to collaborate on code. To invite your friends to collaborate, go to your repository, then click on Settings, then Collaborators. The location of these buttons have been made apparent in the following image. From there, you can search your friends' username, full name or email address and invite them to collaborate on the code in the repository.
+
+![](Images/collaborate.png)
