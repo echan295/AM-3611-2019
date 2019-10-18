@@ -164,4 +164,4 @@ git remote add origin <paste link here>
 ```console
 git push origin master
 ```
-Refresh your GitHub repository, and you will see that the files from your local repository are also on GitHub. 
+Terminal will prompt you to enter your GitHub username and password (so don't forget them!). Refresh your GitHub repository, and you will see that the files from your local repository are also on GitHub.
