@@ -194,4 +194,8 @@ This tells Git the location of the original repository that we want to sync with
 ```console
 git fetch upstream
 ```
-This should have downloaded the original repository (updated version) onto your local computer, but on a different branch. Then, we can merge the update branch to our `master` branch, and your local repository is now synced up to the newest update.
+This should have downloaded the original repository (updated version) onto your local computer, but on a different branch. Then, we can merge the update branch to our `master` branch
+```console
+git merge upstream/master
+```
+and your local repository is now synced up to the newest update.
