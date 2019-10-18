@@ -198,4 +198,7 @@ This should have downloaded the original repository (updated version) onto your 
 ```console
 git merge upstream/master
 ```
-and your local repository is now synced up to the newest update.
+and your local repository is now synced up to the newest update. To update your fork on GitHub, you must push your changes as well:
+```console
+git push origin master
+```
