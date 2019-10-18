@@ -123,11 +123,25 @@ git add .
 git commit -m "added printString function"
 ```
 
-*Aside: If we switched back to the `master` branch, you will find that the `.cpp` file no longer contains the changes that were made in the `newfeature` branch.*
+*Aside: If we switched back to the `master` branch, you will find that the `hello.cpp` file no longer contains the changes that were made in the `newfeature` branch.*
 
-
-
-
-
+Let's say that we are supposedly happy with this new feature. We then want to merge the changes done in your `newfeature` branch to the `master` branch so that everyone has access to the new changes. To merge your changes, we first need to switch back to the `master` branch:
+```console
+git checkout master
+```
+then we are ready to merge. (Note: you must commit all changes in your `newfeature` branch in order to be able to merge the changes.) The command to merge the changes to your `master` branch is
+```console
+git merge newfeature
+```
+Since we are on the `master` branch, this command indicates that we want to merge the changes done in the `newfeature` branch to the `master` branch. Now that the changes have been merged, the `newfeature` branch can be deleted using the command
+```console
+git branch -d newfeature
+```
+The `-d` indicates that the `newfeature` branch will be deleted.
 
 ## Introduction to GitHub
+Now that we know the basics of Git, we can begin our discussion on GitHub. As a reminder, Git and GitHub are two separate entities: Git is local to your computer, GitHub is remote. In this discussion, we will learn how to "sync" your local and remote repositories, "fork" a repository (and keep this repository in sync).
+
+### Pushing your local repository (Git) to a remote repository (GitHub)
+We first need to sign in to GitHub and create a new repository.
+![](Images/newRepo.png)
