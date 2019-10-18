@@ -142,7 +142,7 @@ The `-d` indicates that the `newfeature` branch will be deleted.
 ## Introduction to GitHub
 Now that we know the basics of Git, we can begin our discussion on GitHub. As a reminder, Git and GitHub are two separate entities: Git is local to your computer, GitHub is remote. In this discussion, we will learn how to "sync" your local and remote repositories, "fork" a repository (and keep this repository in sync).
 
-### Pushing your local repository (Git) to a remote repository (GitHub)
+### Setting up your first repository on GitHub
 We first need to sign in to GitHub and create a new repository. As shown in the image below, the button to create a new repository is located on the top right of your screen under the `+` drop down menu.
 
 ![](Images/newRepo.png)
@@ -154,3 +154,14 @@ Clicking "New repository" will then take you to a page that looks like the image
 GitHub will then make the repository and bring you to the link where your repository is located. Since this is a new repository, GitHub gives you some commands to get started. We will highlight them here (if we haven't already). In the blue box, like the one that is shown in the image below, there is a link to your remote repository. Click on the button (circled in the image below) to copy the link---you will need it shortly.
 
 ![](Images/httpslink.png)
+
+### Pushing your local repository (Git) to a remote repository (GitHub)
+Now, in your terminal (in the same directory where you have stored your git repository), type in the following command:
+```console
+git remote add origin <paste link here>
+```
+(Note: do not include the angled brackets.) This tells Git the location of your remote repository. Now, you are able to "push" your committed files from your local repository (`master` branch) to your remote one (called `origin`) by typing
+```console
+git push origin master
+```
+Refresh your GitHub repository, and you will see that the files from your local repository are also on GitHub. 
