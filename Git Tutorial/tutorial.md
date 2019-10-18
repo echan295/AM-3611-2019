@@ -166,6 +166,13 @@ git push origin master
 ```
 Terminal will prompt you to enter your GitHub username and password (so don't forget them!). Refresh your GitHub repository, and you will see that the files from your local repository are also on GitHub.
 
+### Making a README file
+When making a remote repository, it is high recommended to make a README file. Your README file should tell people why your project is useful, what they can do with your project, and how they can use it. In terminal, in the same directory of your local repository, type
+```console
+touch README.md
+```
+which creates a README file. The extension `.md` stands for "Markdown". After creating your file, you can begin writing on your README file with your favourite text editor. To get a guide to Markdown (specifically for GitHub) visit the following link: https://guides.github.com/features/mastering-markdown/
+
 ### Forking a repository
 Let's say that there is a repository that you don't own that you'd like to contribute to. GitHub (not Git) has a feature called "forking". By forking a repository, essentially you are making a copy of the original repository, in which you own the duplicate (also known as a fork). This allows you to change the code without disturbing the original code. To fork a repository, all you need to do is click the "fork" button, like the one in the image below.
 
@@ -202,6 +209,10 @@ and your local repository is now synced up to the newest update. To update your 
 ```console
 git push origin master
 ```
+
+<!-- ### Submitting a pull request -->
+
+<!-- ### Receiving a pull request -->
 
 ### Collaboration
 GitHub makes it very easy for people to collaborate on code. To invite your friends to collaborate, go to your repository, click on Settings, then Collaborators. The location of these buttons have been made apparent in the following image. From there, you can search your friends' username, full name or email address and invite them to collaborate on the code in the repository.
