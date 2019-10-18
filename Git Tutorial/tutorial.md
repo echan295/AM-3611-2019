@@ -24,10 +24,10 @@ Now that we have provided our name and email, we want to create a local reposito
 ```console
 pwd # gives working directory
 ls # lists contents in directory
-cd directoryname # change directory
+cd <directoryname> # change directory
 cd .. # change one directory up
-mkdir directoryname # make directory
-touch filename.extension # create file without any content
+mkdir <directoryname> # make directory
+touch <filename.extension> # create file without any content
 ```
 
 ### Basic Git Commands
@@ -117,6 +117,17 @@ void printString(std::string s)
   std::cout << s << "\n";
 }
 ```
+After we checked that our program is working without bugs, we can commit the file containing our new feature:
+```console
+git add .
+git commit -m "added printString function"
+```
+
+*Aside: If we switched back to the `master` branch, you will find that the `.cpp` file no longer contains the changes that were made in the `newfeature` branch.*
+
+
+
+
 
 
 ## Introduction to GitHub
