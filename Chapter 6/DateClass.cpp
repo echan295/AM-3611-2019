@@ -1,4 +1,4 @@
-// Bad example of a class (DO NOT EVER DO THIS)
+// Good example of a class
 
 #include <iostream>
 
@@ -6,12 +6,63 @@
 class DateClass
 {
   // access modifier
-public:
-  // initialize variables publicly (bad)
+private: // things that are private aren't able to be accessed by the main function
+  // initialize variables privately (good)
+  // data encapsulation: putting most (if not all) member variables in private and having member functions "get" or "set" the values
   int m_day;
   int m_month;
   int m_year;
+public: // things that are public are able to be accessed by the main function
+  // constructor (most of the time, we want to make our own)
+  // conditions of a constructor:
+  // 1. has to have the same name as class name
+  // 2. no return type (not even void)
+  // 3. this function will not be called by user
 
+  // this constructor accepts no arguments
+  DateClass()
+  {
+    // assign variables to these set values (when creating an instance, if you do not include the day, month, and year, this constructor will be called)
+    m_day = 1;
+    m_month = 1;
+    m_year = -13000;
+  }
+
+  // this constructor accepts three arguments
+  DateClass(int day, int month, int year)
+  {
+    // assign member variables to the values pased in argument
+    m_day = day;
+    m_month = month;
+    m_year = year;
+  }
+  // create a function to set the Date
+  void setDate(int day, int month, int year)
+  {
+    assert((day < 32) && (day > 0));
+    m_day = day;
+    m_month = month;
+    m_year = year;
+  }
+  // create a "setter" function that sets the day
+  void setDay(int day)
+  {
+    m_day = day;
+  }
+  // create a "getter" function that gets the day
+  int getDay()
+  {
+    return m_day;
+  }
+  // create a copy constructor
+  // reason to pass reference rather than DateClass:
+  // takes too much memory to copy into the function!
+  void copyConstructor(const DateClass &d)
+  {
+    m_day = d.m_day;
+    m_month = d.m_month;
+    m_year = d.m_year;
+  }
   // create function/method in public (okay)
   void printDate()
   {
@@ -20,10 +71,24 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
+  // this was done before making our constructor (that required 3 arguments)
   DateClass today; // create an instance (today is the object and belongs to the class DateClass)
-  today.m_day = 16; // access the variables from the class and assign them values (bad)
-  today.m_month = 10; // access the variables from the class and assign them values (bad)
-  today.m_year = 2019; // access the variables from the class and assign them values (bad)
-  today.printDate(); // call printDate function (okay)
+  today.setDate(21, 10, 2019); // call setDate function
+  today.printDate(); // call printDate function
+
+  // this was done after making our constructors
+  DateClass tomorrow(22, 10, 2019); // called on the default constructor (that accepts 3 arguments)
+  tomorrow.printDate(); // call printDate function (this should print the values that we specified when creating our instance)
+  tomorrow.setDate(23, 10, 2019); // we can reset our values using the setDate function
+  tomorrow.printDate(); // to show that the values have changed.
+
+  // create another instance
+  DateClass beginningOfTime; // this will call on the default constructor (that we made) without arguments
+  beginningOfTime.printDate();
+  beginningOfTime.setDay(5);
+  std::cout << beginningOfTime.getDay() << "\n";
+  beginningOfTime.printDate();
+  DateClass copyBeginning(beginningOfTime); // calls the copy constructor
+  copyBeginning.printDate(); // result should be the same as beginningOfTime object
   return 0;
 }
