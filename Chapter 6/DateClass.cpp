@@ -54,7 +54,7 @@ public: // things that are public are able to be accessed by the main function
   {
     return m_day;
   }
-  // create a copy constructor
+  // create a copy constructor (not reallly a constructor, more like a function)
   // reason to pass reference rather than DateClass:
   // takes too much memory to copy into the function!
   void copyConstructor(const DateClass &d)
@@ -88,7 +88,10 @@ int main(int argc, char const *argv[]) {
   beginningOfTime.setDay(5);
   std::cout << beginningOfTime.getDay() << "\n";
   beginningOfTime.printDate();
-  DateClass copyBeginning(beginningOfTime); // calls the copy constructor
+  DateClass copyBeginning(beginningOfTime); // calls the implicit copy constructor (the one that c++ makes)
   copyBeginning.printDate(); // result should be the same as beginningOfTime object
+  DateClass copyBeginning2; // create another instance
+  copyBeginning2.copyConstructor(beginningOfTime); // call copy function that we made
+  copyBeginning2.printDate(); // result should also be the same
   return 0;
 }
