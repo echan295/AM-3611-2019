@@ -7,7 +7,7 @@ class Fraction
   double m_numerator;
   double m_denominator;
 public:
-  // constructor, with default value numerator = 0, denominator = 1 (these values should only be)
+  // constructor, with default value numerator = 0, denominator = 1 (these values should only be written here)
   Fraction(double numerator = 0, double denominator = 1);
   double getNumerator() const; //the object will not be changed
   double getDenominator();
