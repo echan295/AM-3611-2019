@@ -12,6 +12,10 @@ int main(int argc, char const *argv[]) {
   // std::cout << b.getNumerator() << "/" << b.getDenominator() << "\n";
   std::cout << getNumerator(b) << "/" << getDenominator(b) << "\n";
 
+  // test out unary - overload
+  Fraction d = -b;
+  std::cout << getNumerator(d) << "/" << getDenominator(d) << "\n";
+
   // operator overload, so a+b (where a and b are fractions) is okay (both methods are called this way)
   Fraction c = a+b;
   std::cout << getNumerator(c) << "/" << getDenominator(c) << "\n";
